@@ -1,0 +1,11 @@
+{
+   "firebaseKeys": {
+  "apiKey": "AIzaSyDvGmMz_nW4JjurlpI5rwlTqEEhIqBorV4",
+    "authDomain": "pinterestproject-d87f5.firebaseapp.com",
+    "databaseURL": "https://pinterestproject-d87f5.firebaseio.com",
+    "projectId": "pinterestproject-d87f5",
+    "storageBucket": "pinterestproject-d87f5.appspot.com",
+    "messagingSenderId": "1022248905881",
+    "appId": "1:1022248905881:web:b2b3f9ba9700bff51a9c08"
+  }
+}
