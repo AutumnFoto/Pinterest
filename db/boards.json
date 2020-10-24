@@ -1,0 +1,17 @@
+{
+    "boards1": {
+        "firebaseKey": "boards1",
+        "name": "Pastas",
+        "image": "https://user-images.githubusercontent.com/67588177/94206440-0c63d580-fe8b-11ea-8270-db1871533d77.jpg"
+    },
+    "boards2": {
+        "firebaseKey": "boards2",
+        "name": "Pastas",
+        "image": "https://user-images.githubusercontent.com/67588177/94206440-0c63d580-fe8b-11ea-8270-db1871533d77.jpg"
+    },
+    "boards3": {
+        "firebaseKey": "boards3",
+        "name": "Pastas",
+        "image": "https://user-images.githubusercontent.com/67588177/94206440-0c63d580-fe8b-11ea-8270-db1871533d77.jpg"
+    }
+}

@@ -1,13 +1,3 @@
-// import firebase from 'firebase/app';
-// import userData from './data/userData';
-
-// const setUser = () => new Promise((resolve) => {
-//   firebase.auth().onAuthStateChanged((user) => {
-//     const currentUser = userData.setCurrentUser(user);
-//     resolve(currentUser);
-//   });
-// });
-
 const viewHelper = (id) => {
   $('#app').html('');
   switch (id) {

@@ -8,13 +8,14 @@ import viewHelper from '../viewHelper';
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
+      $('#app').html('');
       const currentUser = userData.setCurrentUser(user);
       viewHelper.viewListener('home-link');
       myNavBar.myNavBar(currentUser.name);
     } else {
       myNavBar.myNavBar('guest');
-      viewHelper.viewListener('home-link');
       auth.loginButton();
+      $('#nav').html('');
     }
   });
 };
