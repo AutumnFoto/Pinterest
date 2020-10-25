@@ -1,6 +1,12 @@
+import boardView from '../components/views/boardView';
+
 const viewHelper = (id) => {
   $('#app').html('');
   switch (id) {
+    case 'board-link':
+      return boardView.boardView();
+    // case 'add-board':
+    //   return addBoardView.addBoardView();
     case 'home-link':
       return console.warn('home-link is workin!');
     default:
