@@ -1,0 +1,23 @@
+{
+    "dinns1": {
+        "firebaseKey": "dinns1",
+        "name": "Vegetarian Pasta Dish",
+        "image": "https://user-images.githubusercontent.com/67588177/94206803-e985f100-fe8b-11ea-98ca-7b24fafffe06.jpg",
+        "description": "Lovely pasta dinners",
+        "link": "https://www.olivemagazine.com/recipes/vegetarian/best-ever-vegetarian-pasta-recipes/"
+    },
+    "dinns2": {
+        "firebaseKey": "dinns2",
+        "name": "Vegetarian Pasta Dish",
+        "image": "https://user-images.githubusercontent.com/67588177/94206803-e985f100-fe8b-11ea-98ca-7b24fafffe06.jpg",
+        "description": "Lovely pasta dinners",
+        "link": "https://www.olivemagazine.com/recipes/vegetarian/best-ever-vegetarian-pasta-recipes/"
+    },
+    "dinns3": {
+        "firebaseKey": "dinns3",
+        "name": "Vegetarian Pasta Dish",
+        "image": "https://user-images.githubusercontent.com/67588177/94206803-e985f100-fe8b-11ea-98ca-7b24fafffe06.jpg",
+        "description": "Lovely pasta dinners",
+        "link": "https://www.olivemagazine.com/recipes/vegetarian/best-ever-vegetarian-pasta-recipes/"
+    }
+}
