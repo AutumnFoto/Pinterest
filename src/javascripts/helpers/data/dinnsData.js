@@ -2,6 +2,7 @@ import axios from 'axios';
 import apiKeys from './apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
+
 const getDinns = () => new Promise((resolve, reject) => {
   axios
     .get(`${baseUrl}/Dinns.json`)
@@ -35,7 +36,7 @@ const getboardDinns = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 const getSingleDinn = (dinnFirebaseKey) => new Promise((resolve, reject) => {
-  axios.get(`${baseUrl}/dinns/${dinnFirebaseKey}.json`).then((response) => {
+  axios.get(`${baseUrl}/Dinns/${dinnFirebaseKey}.json`).then((response) => {
     const thisDinn = response.data;
     resolve(thisDinn);
   }).catch((error) => reject(error));

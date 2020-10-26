@@ -9,7 +9,7 @@ const signMeIn = () => {
 const loginButton = () => {
   // eslint-disable-next-line max-len
   const domString = '<div class="d-flex jusify-content-end"><div class="welcome-container"><span class="welcome-logo"><i class="fas fa-cookie-bite"></i></span><h4>Welcome to Dinnterest</h4><button id="google-auth" class="welcome-button btn btn-outline-success btn-lg"><i class="fab fa-google"></i></i>oogle Login</button></div></div>';
-  $('#app').html(domString);
+  $('#auth').html(domString);
   $('#google-auth').on('click', signMeIn);
 };
 

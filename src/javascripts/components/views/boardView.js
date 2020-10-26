@@ -4,7 +4,7 @@ import card from '../cards/boardCard';
 const boardView = () => {
   $('#add-dinn').html('');
   $('#app').html('<h1>Boards</h1>');
-  boardData.getUserBoards().then((response) => {
+  boardData.getBoards().then((response) => {
     if (response.length) {
       response.forEach((item) => {
         $('#app').append(card.boardMaker(item));
