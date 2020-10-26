@@ -3,22 +3,6 @@ import apiKeys from './apiKeys.json';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
-// const getAllUsers = () => new Promise((resolve, reject) => {
-//   axios
-//     .get(`${baseUrl}/users.json`)
-//     .then((response) => {
-//       const userData = response.data;
-//       const users = [];
-//       if (userData) {
-//         Object.keys(userData).forEach((userId) => {
-//           users.push(userData[userId]);
-//         });
-//       }
-//       resolve(users);
-//     })
-//     .catch((error) => reject(error));
-// });
-
 const checkIfUserExistsInFirebase = (user) => {
   axios
     .get(`${baseUrl}/users.json?orderBy="uid"&equalTo="${user.uid}"`)
