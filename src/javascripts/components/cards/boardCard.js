@@ -1,4 +1,4 @@
-// import boardData from '../../helpers/data/boardData';
+import boardData from '../../helpers/data/boardData';
 
 const boardMaker = (boardObject) => {
   const domString = `<div class="card board" style="width: 18rem;" id="${boardObject.firebaseKey}">
@@ -9,13 +9,12 @@ const boardMaker = (boardObject) => {
   </div>
 </div>`;
 
-  // $('body').on('click', '.delete-board', (e) => {
-  //   e.stopImmediatePropagation();
-  //   const firebaseKey = e.currentTarget.id;
-  //   $(`.card#${firebaseKey}`).remove();
-  //   boardData.deleteBoard(firebaseKey);
-  // });
-
+  $('body').on('click', '.delete-board', (e) => {
+    e.stopImmediatePropagation();
+    const firebaseKey = e.currentTarget.id;
+    $(`.card#${firebaseKey}`).remove();
+    boardData.deleteBoard(firebaseKey);
+  });
   return domString;
 };
 

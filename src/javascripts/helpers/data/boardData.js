@@ -1,6 +1,7 @@
 import 'firebase/auth';
 import axios from 'axios';
 import apiKeys from './apiKeys.json';
+import dinnsData from './dinnsData';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
@@ -27,4 +28,19 @@ const getSingleBoard = (boardFirebaseKey) => new Promise((resolve, reject) => {
   }).catch((error) => reject(error));
 });
 
-export default { getBoards, getSingleBoard };
+const deleteBoard = (boardId) => {
+  dinnsData.getboardDinns(boardId)
+    .then((response) => {
+      response.forEach((item) => {
+        dinnsData.deleteDinn(item.firebaseKey);
+      });
+    })
+    .then(() => {
+      getSingleBoard(boardId)
+        .then((response) => {
+          axios.delete(`${baseUrl}/boards/${response.firebaseKey}.json`);
+        });
+    });
+};
+
+export default { getBoards, getSingleBoard, deleteBoard };
