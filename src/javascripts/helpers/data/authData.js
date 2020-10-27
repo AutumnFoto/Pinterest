@@ -8,9 +8,10 @@ import viewHelper from '../viewHelper';
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      $('#app').html('');
+      $('#auth').html('');
+      // $('#app').html('<h1> Boards </h1>');
       const currentUser = userData.setCurrentUser(user);
-      viewHelper.viewListener('home-link');
+      viewHelper.viewListener('board-link');
       myNavBar.myNavBar(currentUser.name);
     } else {
       myNavBar.myNavBar('guest');
