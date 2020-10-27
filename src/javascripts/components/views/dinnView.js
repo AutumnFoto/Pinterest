@@ -8,7 +8,7 @@ const dinnsView = (boardId) => {
     .then((response) => {
       const { board, dinns } = response;
 
-      $('#auth').html(`<div id="single-view">
+      $('#app').html(`<div id="single-view">
                           <h1>${board.name} Dinns</h1>
                         </div>`);
       if (dinns.length) {

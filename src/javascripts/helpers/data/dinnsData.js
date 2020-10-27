@@ -42,4 +42,8 @@ const getSingleDinn = (dinnFirebaseKey) => new Promise((resolve, reject) => {
   }).catch((error) => reject(error));
 });
 
-export default { getDinns, getboardDinns, getSingleDinn };
+const deleteDinn = (firebaseKey) => axios.delete(`${baseUrl}/Dinns/${firebaseKey}.json`);
+
+export default {
+  getDinns, getboardDinns, getSingleDinn, deleteDinn
+};

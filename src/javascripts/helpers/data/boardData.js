@@ -38,7 +38,7 @@ const deleteBoard = (boardId) => {
     .then(() => {
       getSingleBoard(boardId)
         .then((response) => {
-          axios.delete(`${baseUrl}/boards/${response.firebaseKey}.json`);
+          axios.delete(`${baseUrl}/Boards/${response.firebaseKey}.json`);
         });
     });
 };
