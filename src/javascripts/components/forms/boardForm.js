@@ -4,7 +4,7 @@ import boardData from '../../helpers/data/boardData';
 
 const boardForm = () => {
   $('#board-form').html(
-    `<h2>Add A Dinnterest Board</h2>
+    `<h2>Add A Board</h2>
             <div id="success-message"></div>
             <form>
               <div id="error-message"></div>

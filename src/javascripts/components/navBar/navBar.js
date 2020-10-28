@@ -22,10 +22,10 @@ const myNavBar = (currentUser) => {
       <li class="nav-item mx-3" id="board-link">
         <a class="nav-link" href="#"><i class="fas fa-utensils"></i></i> Boards</a>
       </li>
-      <li class="nav-item mx-3" id="add-board-link">
+      <li class="nav-item mx-3" id="add-board">
         <a class="nav-link" href="#"><i class="fas fa-plus-circle"></i> Add A Board</a>
       </li>
-      <li class="nav-item mx-3" id="add-dinn-link">
+      <li class="nav-item mx-3" id="add-dinn">
         <a class="nav-link" href="#"><i class="fas fa-plus-circle"></i> Add A Dinn</a>
       </li>
     </ul>
