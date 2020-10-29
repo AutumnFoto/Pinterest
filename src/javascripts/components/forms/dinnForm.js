@@ -33,7 +33,7 @@ const dinnForm = () => {
             </form>`
   );
 
-  boardData.getUserBoards().then((response) => {
+  boardData.getBoards().then((response) => {
     response.forEach((item) => {
       $('select').append(`<option value="${item.firebaseKey}">${item.name}</option>`);
     });
