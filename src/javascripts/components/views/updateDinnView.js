@@ -1,5 +1,5 @@
 import dinnData from '../../helpers/data/dinnsData';
-import form from '../forms/dinnForm';
+import form from '../forms/updateDinnForm';
 
 const updateDinnView = (dinnFirebaseKey) => {
   $('#auth').html('');

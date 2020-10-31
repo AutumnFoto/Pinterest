@@ -2,8 +2,8 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
 body {
-  background-color: antiquewhite;
-  color: brown;
+  background-color: #9EC6D1;
+  color: #ffffff;
   text-align: center;
   
 }
@@ -12,7 +12,33 @@ body {
 height: 100px;
 }
 
-#auth{
+#app {
+  margin-top: 20px;
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+
+#nav{
+  background-color: #445680;
+}
+
+.card-body{
+  background-color: #fac7a2;
+}
+
+#auth {
+  display: flex; 
   justify-content: center;
+  margin-top: 100px;
+  font-size: 150px;
+}
+
+.delete-dinn{
+  background-color: #C2276A;
+}
+
+.delete-board{
+  background-color: #C2276A;
 }
