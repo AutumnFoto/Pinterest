@@ -27,6 +27,7 @@ const viewListener = (view) => {
   $('body').on('click', 'li.nav-item', (e) => {
     viewHelper(e.currentTarget.id);
   });
+
   $('body').on('click', '.update-dinn', (e) => {
     const dinnFirebaseKey = e.currentTarget.id;
     viewHelper('update-dinn-link', dinnFirebaseKey);

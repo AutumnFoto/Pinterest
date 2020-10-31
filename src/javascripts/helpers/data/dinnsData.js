@@ -50,6 +50,7 @@ const addDinn = (data) => axios.post(`${baseUrl}/Dinns.json`, data)
     axios.patch(`${baseUrl}/Dinns/${response.data.name}.json`, update);
   }).catch((error) => console.warn(error));
 
+const updateDinn = (firebaseKey, dinnObject) => axios.patch(`${baseUrl}/Dinns/${firebaseKey}.json`, dinnObject);
 export default {
-  getDinns, getboardDinns, getSingleDinn, deleteDinn, addDinn
+  getDinns, getboardDinns, getSingleDinn, deleteDinn, addDinn, updateDinn
 };
